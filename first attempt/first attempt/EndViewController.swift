@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class EndViewController: UIViewController {
     
@@ -37,5 +38,13 @@ class EndViewController: UIViewController {
     @IBAction func restartGame(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
         self.presentingViewController?.dismiss(animated: false, completion: nil)
+    }
+    
+    
+    @IBAction func shareTwitter(_ sender: Any) {
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
+            let twitter:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            twitter.setInitialText(scoreLabel.text)
+        }
     }
 }

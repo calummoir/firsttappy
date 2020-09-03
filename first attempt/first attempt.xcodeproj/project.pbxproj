@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4AA64821F891130035D75A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4AA64721F891130035D75A /* Social.framework */; };
 		E85E319721F13F5D00D987C3 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85E319621F13F5D00D987C3 /* EndViewController.swift */; };
 		E8F005D121A5D6AB0029C421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F005D021A5D6AB0029C421 /* AppDelegate.swift */; };
 		E8F005D321A5D6AB0029C421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F005D221A5D6AB0029C421 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C4AA64721F891130035D75A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E85E319621F13F5D00D987C3 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		E8F005CD21A5D6AB0029C421 /* first attempt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "first attempt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F005D021A5D6AB0029C421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4AA64821F891130035D75A /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4AA64621F891130035D75A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C4AA64721F891130035D75A /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8F005C421A5D6AA0029C421 = {
 			isa = PBXGroup;
 			children = (
 				E8F005CF21A5D6AB0029C421 /* first attempt */,
 				E8F005CE21A5D6AB0029C421 /* Products */,
+				1C4AA64621F891130035D75A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
